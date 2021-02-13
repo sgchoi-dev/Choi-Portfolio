@@ -76,15 +76,16 @@ section .tit-area {font-weight: 700; font-size: 20px;}
 .skill-wrap li .right .bar {height: 100%; background-color: #444;}
 .skill-wrap li .num {position: absolute; right: 0; top: 0;}
 
-.contact-wrap {}
+.contact-wrap {margin-top: 20px;}
+.contact-wrap p {margin-bottom: 10px; letter-spacing: 0.5px;}
 
 
 @media all and (max-width:1024px) {
-    #contents {padding: 100px 50px;}
+    #contents {padding: 130px 50px;}
 }
 
 @media all and (max-width:768px) {
-    #contents {padding: 100px 5%;}
+    #contents {padding: 110px 5%;}
     section + section {margin-top: 70px;}
 
     header {height: 80px; background-color: rgba(255,255,255,0.8); box-shadow: 0 10px 10px rgba(0,0,0,0.2);}

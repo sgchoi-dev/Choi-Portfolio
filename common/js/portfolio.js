@@ -1,49 +1,19 @@
 $(function () {
-  main.swipe();
-});
-
-$(document).ready(function(){
-	if($('#firstViewPopup').length != 0){
-		setTimeout(function(){
-			$('html, body').scrollTop(0);
-		}, 1000);
-	}
-	if($(window).width() < 1025){
-		if($('.personalBanner').length != 0){
-			setTimeout(function(){
-				$('html, body').scrollTop(0);
-			}, 1000);
-		}
-	}
+  main.clickScrollEvt();
 });
 
 var main = function(){
-	var _isChkInAppBrwMn = false;
-  var _resizeW, _resizeH;
-
   return {
-		initializeEvt : function() {
-			if(navigator.userAgent.indexOf("KAKAO") > -1) {
-				_isChkInAppBrwMn = true;
-			} else {
-				_isChkInAppBrwMn = false;
-			}
-
-			if(navigator.userAgent.indexOf("Mobi") > -1) {
-                _isChkMobile = true;
-            } else {
-                _isChkMobile = false;
-            }
-		},
-		swipe : function () {
-			var mainSwiper = new Swiper('.swiper-container.main-swiper', {
-				observeParents: true,
-				observer: true,
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
+		clickScrollEvt : function() {
+			$("header .btn-home").on("click", function(){
+				TweenMax.to($("html, body"), 0.5, {scrollTop:0, ease:Power3.easeOut});
 			});
-		},
+
+			$("header .gnb .menu").each(function(q){
+				$(this).on("click", function(){
+					TweenMax.to($("html, body"), 0.5, {scrollTop:$("#"+$(this).attr("data")).offset().top - 100, ease:Power3.easeOut});
+				});
+			});
+		}
 	}
 }();
