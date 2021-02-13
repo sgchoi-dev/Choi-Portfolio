@@ -28,5 +28,8 @@ export default {
 </script>
 
 <style scoped>
-
+	* {box-sizing: border-box;}
+	div {padding: 50px 50px 0;}
+	input {padding: 10px; width: calc(100% - 110px); height: 50px; border: 1px solid #ccc;}
+	button {margin-left: 10px; width: 100px; height: 50px; color: #fff; font-weight: bold; font-size: 15px; border: 0; background-color: #333;}
 </style>
