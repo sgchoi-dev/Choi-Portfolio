@@ -95,6 +95,7 @@ section .tit-area {font-weight: 700; font-size: 20px;}
     header .gnb .menu {margin-left: 20px; font-size: 15px;}
 
     .my-info-txt {font-size: 30px;}
+    .my-info-txt span:before {height: 15px;}
 
     .works-section .work-wrap .list {display: block; margin-top: 40px;}
     .works-section .work-wrap .list:first-child {margin-top: 20px;}
