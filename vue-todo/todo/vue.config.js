@@ -1,4 +1,4 @@
-module.exports = {
+/*module.exports = {
     outputDir:'./docs',
     publicPath: '/vue-test/'
-}
+}*/
