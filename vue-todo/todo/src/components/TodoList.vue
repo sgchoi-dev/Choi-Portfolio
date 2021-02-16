@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style scoped>
-    section {padding: 30px 50px 0;}
+    section {padding: 30px 3% 0;}
     ul {padding: 0;}
     ul li {position: relative; padding: 10px 100px 10px 10px; list-style: none; border-bottom: 1px solid #eee}
     ul li button {position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
