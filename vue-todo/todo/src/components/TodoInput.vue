@@ -1,6 +1,6 @@
 <template>
     <div>
-        <input type="text" v-model="newTodoItem" v-on:keypress.enter="addTodo" placeholder="할 일을 입력해 주세요">
+        <input type="text" v-model="newTodoItem" v-on:keypress.enter="addTodo">
         <button v-on:click="addTodo">추가</button>
     </div>
 </template>
@@ -16,10 +16,8 @@ export default {
         addTodo(){
             if(this.newTodoItem !== ''){
 				var value = this.newTodoItem && this.newTodoItem.trim();
-                if(value > 0) {
-                    this.$emit('addTodo', value);
-                    this.clearInputbox();
-                }
+                this.$emit('addTodo', value);
+                this.clearInputbox();
             }
         },
         clearInputbox(){
