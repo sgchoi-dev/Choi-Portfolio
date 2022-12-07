@@ -1,3 +1,2 @@
-# Choi-Portfolio
+# Choi study history
 
-Portfolio URL - https://choi-sg-dev.github.io/Choi-Portfolio/
