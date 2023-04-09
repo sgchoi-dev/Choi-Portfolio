@@ -80,9 +80,13 @@ section .tit-area {font-weight: 700; font-size: 20px;}
 .contact-wrap {margin-top: 20px;}
 .contact-wrap p {margin-bottom: 20px; letter-spacing: 0.5px;}
 
+.footer-inner {padding: 0 180px 100px;}
+
 
 @media all and (max-width:1024px) {
     #contents {padding: 130px 50px;}
+
+    .footer-inner {padding: 0 50px 100px;}
 }
 
 @media all and (max-width:768px) {
@@ -109,4 +113,6 @@ section .tit-area {font-weight: 700; font-size: 20px;}
     .skill-wrap li .left {width: 110px; font-size: 13px;}
     .skill-wrap li .right {width: calc(100% - 120px); height: 15px;}
     .skill-wrap li .num {font-size: 13px;}
+
+    .footer-inner {padding: 0 5% 60px;}
 }
